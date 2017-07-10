@@ -1,0 +1,222 @@
+$white:#fff;
+$sky-blue:#edf5ff;
+$sky-blue-dark:#79a4cf;
+$font-blue:#336699;
+$font-lightblue:#79a4cf;
+$fade-color:#ccc;
+.dp-popup {
+    position: absolute;
+    border: 1px solid $fade-color;
+    z-index: 100;
+    width: 88%;
+    right: 0;
+    top: 32px;
+    .well {
+        margin-bottom: 0;
+        background: $white;
+        .btn {
+            &:active,
+            &.active {
+                box-shadow: none;
+            }
+        }
+        td,
+        th {
+            padding: 2px;
+        }
+        .btn-default {
+            &:hover,
+            &:focus {
+                color: $sky-blue-dark;
+                background-color: $sky-blue;
+                border-color: $font-lightblue;
+            }
+            &:active,
+            &.active {
+                background-color: $sky-blue;
+                border-color: $font-lightblue;
+                span {
+                    color: $sky-blue-dark;
+                    &:hover {
+                        color: $sky-blue-dark;
+                    }
+                }
+            }
+            &.btn-info {
+                &:active,
+                &.active {
+                    background-color: $sky-blue-dark;
+                    border-color: $font-lightblue;
+                    span {
+                        color: $white;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        daypicker {
+            .btn-default {
+                .text-muted {
+                    color: $fade-color;
+                }
+            }
+            table {
+                .text-center {
+                    small {
+                        color: $sky-blue-dark;
+                    }
+                }
+            }
+        }
+        yearpicker {
+            .btn {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+.input-group {
+    .form-control {
+        box-shadow: none;
+    }
+    input[type="text"] {
+        color: $white;
+    }
+    .material-icons {
+        color: $white;
+    }
+    .input-group-addon {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+}
+
+.dark-sky {
+    .dp-popup {
+        border: 1px solid $fade-color;
+        .well {
+            background: $white;
+            .btn-default {
+                &:hover,
+                &:focus {
+                    color: $sky-blue-dark;
+                    background-color: $sky-blue;
+                    border-color: $font-lightblue;
+                }
+                &:active,
+                &.active {
+                    background-color: $sky-blue;
+                    border-color: $font-lightblue;
+                    span {
+                        color: $sky-blue-dark;
+                        &:hover {
+                            color: $sky-blue-dark;
+                        }
+                    }
+                }
+                &.btn-info {
+                    &:active,
+                    &.active {
+                        background-color: $sky-blue-dark;
+                        border-color: $font-lightblue;
+                        span {
+                            color: $white;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            daypicker {
+                .btn-default {
+                    .text-muted {
+                        color: $fade-color;
+                    }
+                }
+                table {
+                    .text-center {
+                        small {
+                            color: $sky-blue-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .input-group {
+        input[type="text"] {
+            color: $white;
+        }
+        .material-icons {
+            color: $white;
+        }
+    }
+}
+
+.sky-blue {
+    .dp-popup {
+        border: 1px solid $fade-color;
+        .well {
+            background: $white;
+            .btn-default {
+                &:hover,
+                &:focus {
+                    color: $sky-blue-dark;
+                    background-color: $sky-blue;
+                    border-color: $font-lightblue;
+                }
+                &:active,
+                &.active {
+                    background-color: $sky-blue;
+                    border-color: $font-lightblue;
+                    span {
+                        color: $sky-blue-dark;
+                        &:hover {
+                            color: $sky-blue-dark;
+                        }
+                    }
+                }
+                &.btn-info {
+                    &:active,
+                    &.active {
+                        background-color: $sky-blue-dark;
+                        border-color: $font-lightblue;
+                        span {
+                            color: $white;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            daypicker {
+                .btn-default {
+                    .text-muted {
+                        color: $fade-color;
+                    }
+                }
+                table {
+                    .text-center {
+                        small {
+                            color: $sky-blue-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .input-group {
+        input[type="text"] {
+            color: $font-blue;
+        }
+        .material-icons {
+            color: $font-blue;
+        }
+    }
+}
