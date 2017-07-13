@@ -42,6 +42,8 @@ export class CalenderComponent implements AfterViewInit, OnChanges {
         if (!isNullOrUndefined(data) && data.currentValue) {
             this.datePickerDate = new Date(this.value);
             this.formattedDate = this.transformDate(this.datePickerDate);
+        }else{
+            this.formattedDate ='';
         }
     }
 
