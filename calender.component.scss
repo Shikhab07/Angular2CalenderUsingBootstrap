@@ -4,13 +4,13 @@ $sky-blue-dark:#79a4cf;
 $font-blue:#336699;
 $font-lightblue:#79a4cf;
 $fade-color:#ccc;
+$dark-grey:#2B2B2B;
+$green:#398A35;
 .dp-popup {
     position: absolute;
     border: 1px solid $fade-color;
     z-index: 100;
-    width: 88%;
-    right: 0;
-    top: 32px;
+    width: inherit;     
     .well {
         margin-bottom: 0;
         background: $white;
@@ -83,13 +83,13 @@ $fade-color:#ccc;
         box-shadow: none;
     }
     input[type="text"] {
-        color: $white;
+        color: $dark-grey;
     }
     .material-icons {
         color: $white;
     }
     .input-group-addon {
-        background: none;
+        background: $green;
         border: none;
         padding: 0;
     }

@@ -1,6 +1,6 @@
 <div [ngClass]="themeClass">
     <div class="input-group date">
-        <input type="text" readonly [(ngModel)]="formattedDate" class="form-control input-sm plain-field" id="{{id}}" (focus)="open()" />
+        <input type="text" [(ngModel)]="formattedDate" class="form-control input-sm plain-field" id="{{id}}" (focus)="open()" />
         <span class="input-group-addon" (click)="toggle()">
         <i class="material-icons">date_range</i>
         </span>

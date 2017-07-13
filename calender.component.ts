@@ -20,7 +20,7 @@ export class CalenderComponent implements AfterViewInit, OnChanges {
     @Input() id: string;
     @Input() themeClass: string;
     @Input() value: Date;
-    @Output() onValueChange: EventEmitter<Date> = new EventEmitter();
+    @Output() onValueChange: EventEmitter<any> = new EventEmitter();
 
 
     @HostListener('document:mousedown', ['$event'])
@@ -34,21 +34,21 @@ export class CalenderComponent implements AfterViewInit, OnChanges {
     }
 
     ngAfterViewInit() {
-
-
     }
     ngOnChanges(changes: SimpleChanges) {
         const data: SimpleChange = changes.value;
         if (!isNullOrUndefined(data) && data.currentValue) {
             this.datePickerDate = new Date(this.value);
             this.formattedDate = this.transformDate(this.datePickerDate);
+        } else {
+            this.formattedDate = '';
         }
     }
 
     onSelectionDone(event) {
         this.datePickerDate = event;
         this.formattedDate = this.transformDate(this.datePickerDate);
-        this.onValueChange.emit(this.datePickerDate);
+        this.onValueChange.emit(this.formattedDate);
         this.close();
     }
 
@@ -66,7 +66,7 @@ export class CalenderComponent implements AfterViewInit, OnChanges {
     }
 
     private transformDate(date: Date): string {
-        const formattedDate = new DatePipe('pt-PT').transform(date, 'MM.dd.yyyy');
+        const formattedDate = new DatePipe('pt-PT').transform(date, 'yyyy-MM-dd');
         return formattedDate;
     }
 
